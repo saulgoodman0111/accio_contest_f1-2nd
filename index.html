@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <nav class="nav">
+
+        <ul>
+            <li><a href="#book">Books</a></li>
+            <li><a href="#register" class="register">Register</a></li>
+            <li><a href="#cou">Contact Us</a></li>
+        </ul>
+</nav>
+
+<div class="table">
+    <table id="book">
+        <caption>
+            <h1>Books</h1>
+        </caption>
+        <tr>
+            <th>Book Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td><a href="https://en.wikipedia.org/wiki/The_Great_Indian_Novel">
+                The Great Indian Novel</a>
+                <table>
+                    <tr>
+                        <td>Publication Date:1989</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count:380</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ISBN: 456-388575855</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Shashi Tharoor</td>
+            <td>Satire, Historical Novel</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td><a href="https://en.wikipedia.org/wiki/Pax_Indica_(book)">
+                Pax Indica</a>
+                <table>
+                    <tr>
+                        <td>Publication Date:2012</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count:500</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 123-937358393</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Shashi Tharoor</td>
+            <td>Non-Fiction</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td><a href="https://en.wikipedia.org/wiki/The_Discovery_of_India">
+                The Discovery Of India</a>
+                <table>
+                    <tr>
+                        <td>Publication Date:1946</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count:590</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-799717241</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Jawaharlal Nehru</td>
+            <td>Historical Novel</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td><a href="https://en.wikipedia.org/wiki/Animal_Farm">Animal Farm</a>
+                <table>
+                    <tr>
+                        <td>Publication Date:1945</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count:256</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 567-934885756</td>
+                    </tr>
+                </table>
+            </td>
+            <td>George Orwell</td>
+            <td>Satirical Novel</td>
+            <td>Currently Unavailable</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td><a href="https://en.wikipedia.org/wiki/Personal_Memoirs_of_U._S._Grant">
+                Personal Memoirs of U.S.Grant</a>
+                <table>
+                    <tr>
+                        <td>Publication Date:1885</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count:590</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 897-1213243778</td>
+                    </tr>
+                </table>
+            </td>
+            <td>U.S.Grant</td>
+            <td>Autobiography</td>
+            <td>Online only</td>
+        </tr>
+    </table>
+</div>
+
+<div id="register" class="container">
+    <form class="form">
+        <h1>Register</h1>
+        <hr>
+        <label for="first-name"><b>First Name:</b></label>
+        <input type="text" name="fname" id="first-name" placeholder="enter first name" required>
+
+        <label for="last-name"><b>Last Name:</b></label>
+        <input type="text" name="last-name" id="last-name" placeholder="enter last name" required>
+
+        <label for="dob"><b>Date of Birth:</b></label>
+        <input type="date"   id="dob"><br>
+
+        <label for="age"><b>Age:</b></label>
+        <input type="number" name="age"  id="age" min="5" max="100" placeholder="age in years">
+
+        <label for="email"><b>Email:</b></label>
+        <input type="email"  name="email" id="email" required placeholder="abc@example.com">
+
+        <label for="password"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Password"  name="psd" id="psd">
+        <span id="psd-match"></span><br>
+
+        <label for="psd-repeat"><b>Confirm Password:</b></label>
+        <input type="password" placeholder="Confirm Password"  name="psd-repeat" id="psd-repeat">
+
+        <span id="psd-match2"></span>
+
+        <hr>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </form>
+</div>
+<footer>
+    <div id="cou">
+        &#169 Dunder Mifflin Paper Company, Inc., 1725 Slough Avenue in Scranton, PA
+    </div>
+</footer>
+</body>
+</html>
